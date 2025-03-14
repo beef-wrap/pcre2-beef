@@ -1,0 +1,12 @@
+FileVersion = 1
+
+[Project]
+Name = "pcre2-beef"
+DefaultNamespace = "pcre2"
+
+[Configs.Debug.Win64]
+CLibType = "DynamicDebug"
+LibPaths = ["$(ProjectDir)\\libs\\debug\\pcre2-8-staticd.lib"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\release\\pcre2-8-static.lib"]
